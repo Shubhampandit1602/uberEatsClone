@@ -3,7 +3,7 @@ import React from 'react'
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 
-const localResturant = [
+export const localRestaurants = [
     {
         name: "BeachSide",
         image_url: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=80",
@@ -32,15 +32,15 @@ const localResturant = [
 
 
 
-export default function ResturantItems() {
+export default function RestaurantItems(props) {
   return (
     <TouchableOpacity activeOpacity={1} style = {{marginBottom: 30}}>
-        {localResturant.map((restaurant, index) =>(
+        {props.restaurantData.map((restaurant, index) =>(
             <View 
             key={index}
             style = {{marginTop: 10, padding: 15, backgroundColor: "white" }}>
-            <ResturantImage image = {restaurant.image_url}/>
-            <ResturantInfo name = {restaurant.name} rating = {restaurant.rating} />
+            <RestaurantImage image = {restaurant.image_url}/>
+            <RestaurantInfo name = {restaurant.name} rating = {restaurant.rating} />
         </View>
         ))}
     </TouchableOpacity>
@@ -48,7 +48,7 @@ export default function ResturantItems() {
   );
 }
 
-const ResturantImage = (props) => (
+const RestaurantImage = (props) => (
     <>
     <Image source = {{uri : props.image}}
     style = {{width: "100%" , height: 180 }}
@@ -65,7 +65,7 @@ const ResturantImage = (props) => (
     
 );
 
-const ResturantInfo = (props) => (
+const RestaurantInfo = (props) => (
     <View style = {{flexDirection: "row", justifyContent: "space-between" , alignItems: "center" , marginTop: 10}}>
 
         <View>
