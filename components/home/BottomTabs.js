@@ -7,8 +7,7 @@ export default function BottomTabs() {
     <View style = {{flexDirection: 'row', margin: 10, marginHorizontal: 30, justifyContent: 'space-between'}}>
       <Icon icon = 'home' text = 'Home' />
       <Icon icon = 'search' text = 'Browse' />
-      <Icon icon = 'shopping-bag' text = 'Grocery' />
-      <Icon icon = 'receipt' text = 'Orrders' />
+      <Icon icon = 'receipt' text = 'Orders' />
       <Icon icon = 'user' text = 'Acount' />
       {/* <Text>Bottom</Text> */}
    
