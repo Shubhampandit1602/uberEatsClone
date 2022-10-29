@@ -7,6 +7,9 @@ import Categories from '../components/Categories';
 import RestaurantItems, {
   localRestaurants
 } from "../components/RestaurantItems";
+import { Divider } from 'react-native-elements';
+import BottomTabs from '../components/BottomTabs';
+
 
 
 
@@ -25,6 +28,10 @@ export default function Home() {
       <Categories/>
       <RestaurantItems restaurantData = {restaurantData} />
     </ScrollView>
+    
+    <Divider width={1} />
+    <BottomTabs />
+
     
     
        

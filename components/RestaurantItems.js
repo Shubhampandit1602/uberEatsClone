@@ -28,6 +28,15 @@ export const localRestaurants = [
         reviews: 1293, 
         rating:4.99,
     },
+    {
+    name: "Shawarma Palace",
+    image_url: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    categories: ["Indian", "Bar", "Persian"],
+    price : "$$$$",
+    reviews: 1293, 
+    rating:4.99,   
+    },
+    
 ]
 
 
