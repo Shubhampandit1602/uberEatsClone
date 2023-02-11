@@ -6,3 +6,5 @@ Technologies Used:
 React Native : Frontend, 
 Firebase : Fully Functional Database and a Backend, 
 Redux : State Management.
+
+
